@@ -1,0 +1,37 @@
+#############################
+BibTeX parser using pyparsing
+#############################
+
+This is a simple parser for BibTeX_ files that uses the pyparsing_ module.
+
+It seemed to work for well-formed BibTeX files.
+
+To use it::
+
+    >>> import btpyparse
+    >>> txt = open('refs.bib', 'rt').read()
+    >>> res = btpyparse.parse_str(txt)
+
+This retuns a pyparsing results object with the contents of the bibfile.  To see
+some example output::
+
+    python btpyparse.py
+
+To run the tests::
+
+    python test_btpyparse.py
+
+or::
+
+    nosetests test_btparparse.py
+
+You will need the nose_ testing framework to run the tests.
+
+I (`Matthew Brett`_) wrote this code, and I release it under the simplified
+`BSD license`_. 
+
+.. _nose: http://somethingaboutorange.com/mrl/projects/nose
+.. _bibtex: http://www.bibtex.org/Format
+.. _pyparsing: http://pyparsing.wikispaces.com
+.. _Matthew Brett: http://matthew.dynevor.org
+.. _BSD license: http://www.opensource.org/licenses/bsd-license.php

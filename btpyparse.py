@@ -2,7 +2,7 @@
 
 A standalone parser using pyparsing.
 
-pyparsing has a simple and expressive syntax so the grammer is easy to read and
+pyparsing has a simple and expressive syntax so the grammar is easy to read and
 write.
 
 Matthew Brett 2010
